@@ -1,13 +1,15 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/components/items/historial_detail_item.dart';
-import 'package:delivery/controller/detail_payment_controller.dart';
-import 'package:delivery/model/detail_payment.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/components/items/historial_detail_item.dart';
+import 'package:ecosecha_app/controller/detail_payment_controller.dart';
+import 'package:ecosecha_app/model/detail_payment.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class OrderView extends StatefulWidget {
+  const OrderView({super.key});
+
   @override
   _OrderViewState createState() => _OrderViewState();
 }

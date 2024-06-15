@@ -1,13 +1,13 @@
-import 'package:delivery/components/items/custom_button.dart';
-import 'package:delivery/components/items/custom_formfield.dart';
-import 'package:delivery/components/items/custom_header.dart';
-import 'package:delivery/components/items/custom_richtext.dart';
-import 'package:delivery/controller/auth_controller.dart';
-import 'package:delivery/controller/aux_controller.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/forget_password_screen.dart';
-import 'package:delivery/views/onboard.dart';
-import 'package:delivery/views/sign_up.dart';
+import 'package:ecosecha_app/components/items/custom_button.dart';
+import 'package:ecosecha_app/components/items/custom_formfield.dart';
+import 'package:ecosecha_app/components/items/custom_header.dart';
+import 'package:ecosecha_app/components/items/custom_richtext.dart';
+import 'package:ecosecha_app/controller/auth_controller.dart';
+import 'package:ecosecha_app/controller/aux_controller.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/forget_password_screen.dart';
+import 'package:ecosecha_app/views/onboard.dart';
+import 'package:ecosecha_app/views/sign_up.dart';
 import 'package:flutter/material.dart';
 
 class Signin extends StatefulWidget {

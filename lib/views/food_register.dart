@@ -1,17 +1,17 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print, library_private_types_in_public_api
 
 import 'dart:io';
-import 'package:delivery/components/items/custom_formfield.dart';
-import 'package:delivery/components/nav_bar_owner.dart';
-import 'package:delivery/controller/alert_dialog.dart';
-import 'package:delivery/controller/product_controller.dart';
+import 'package:ecosecha_app/components/items/custom_formfield.dart';
+import 'package:ecosecha_app/components/nav_bar_owner.dart';
+import 'package:ecosecha_app/controller/alert_dialog.dart';
+import 'package:ecosecha_app/controller/product_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 //import 'package:image_picker/image_picker.dart';
 import 'package:raised_buttons/raised_buttons.dart';
 
 class FoodRegister extends StatefulWidget {
-  const FoodRegister({Key? key}) : super(key: key);
+  const FoodRegister({super.key});
 
   @override
   _FoodRegisterState createState() => _FoodRegisterState();

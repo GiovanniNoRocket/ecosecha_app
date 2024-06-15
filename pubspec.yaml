@@ -91,6 +91,11 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
+  assets:
+    - assets/onBoard/OIG2.jpeg
+    - assets/onBoard/OIG3.jpeg
+    - assets/onBoard/OIG4.jpeg
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

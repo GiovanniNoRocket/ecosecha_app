@@ -1,6 +1,6 @@
 // ignore_for_file: avoid_print
 
-import 'package:delivery/model/cart.dart';
+import 'package:ecosecha_app/model/cart.dart';
 import 'package:flutter/material.dart';
 
 class ShoppingController extends ChangeNotifier {

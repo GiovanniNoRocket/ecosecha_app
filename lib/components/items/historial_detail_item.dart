@@ -1,5 +1,5 @@
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/controller/detail_payment_controller.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/controller/detail_payment_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -10,13 +10,12 @@ class HistorialDetailItem extends StatelessWidget {
   final bool active;
 
   const HistorialDetailItem(
-      {Key? key,
+      {super.key,
       required this.products,
       required this.title,
       required this.detailPaymentId,
       this.active = false
-      })
-      : super(key: key);
+      });
 
   @override
   Widget build(BuildContext context) {

@@ -1,11 +1,11 @@
 // ignore_for_file: must_be_immutable, avoid_unnecessary_containers, library_private_types_in_public_api, file_names, unused_element
 
-import 'package:delivery/components/items/custom_button.dart';
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/controller/detail_payment_controller.dart';
-import 'package:delivery/controller/shopping_controller.dart';
-import 'package:delivery/styles/app_colors.dart';
+import 'package:ecosecha_app/components/items/custom_button.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/controller/detail_payment_controller.dart';
+import 'package:ecosecha_app/controller/shopping_controller.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

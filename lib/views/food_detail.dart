@@ -1,12 +1,12 @@
 // ignore_for_file: library_private_types_in_public_api, sort_child_properties_last
 
-import 'package:delivery/components/animation/ScaleRoute.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/controller/shopping_controller.dart';
-import 'package:delivery/model/cart.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/views/food_order.dart';
-import 'package:delivery/views/home_customer.dart';
+import 'package:ecosecha_app/components/animation/ScaleRoute.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/controller/shopping_controller.dart';
+import 'package:ecosecha_app/model/cart.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/views/food_order.dart';
+import 'package:ecosecha_app/views/home_customer.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

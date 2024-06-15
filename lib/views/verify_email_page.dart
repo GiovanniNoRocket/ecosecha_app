@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:async';
 
 import 'package:ecosecha_app/components/items/custom_button.dart';
@@ -9,9 +11,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class VerifyEmail extends StatefulWidget {
-  const VerifyEmail({Key? key, required User user})
-      : _user = user,
-        super(key: key);
+  const VerifyEmail({super.key, required User user})
+      : _user = user;
 
   final User _user;
 

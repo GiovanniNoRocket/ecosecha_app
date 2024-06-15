@@ -1,12 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:delivery/components/appbar_widget.dart';
+import 'package:ecosecha_app/components/appbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
 
 // This class handles the Page to edit the Email Section of the User Profile.
 class EditEmailFormPage extends StatefulWidget {
-  const EditEmailFormPage({Key? key}) : super(key: key);
+  const EditEmailFormPage({super.key});
 
   @override
   EditEmailFormPageState createState() {

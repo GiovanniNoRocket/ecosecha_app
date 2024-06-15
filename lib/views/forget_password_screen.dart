@@ -1,6 +1,6 @@
-import 'package:delivery/components/password_reset/password_reset.dart';
-import 'package:delivery/styles/text_styles.dart';
-import 'package:delivery/views/sign_in.dart';
+import 'package:ecosecha_app/components/password_reset/password_reset.dart';
+import 'package:ecosecha_app/styles/text_styles.dart';
+import 'package:ecosecha_app/views/sign_in.dart';
 import 'package:flutter/material.dart';
 
 class ForgetScreen extends StatelessWidget {

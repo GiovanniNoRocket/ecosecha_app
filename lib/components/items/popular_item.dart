@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
-import 'package:delivery/components/animation/ScaleRoute.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/food_detail.dart';
+import 'package:ecosecha_app/components/animation/ScaleRoute.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/food_detail.dart';
 import 'package:flutter/material.dart';
 
 import 'favorite_box.dart';

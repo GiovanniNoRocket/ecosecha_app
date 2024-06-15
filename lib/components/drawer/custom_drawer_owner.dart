@@ -1,10 +1,10 @@
-import 'package:delivery/components/drawer/bottom_user_info.dart';
-import 'package:delivery/components/drawer/header.dart';
-import 'package:delivery/components/items/custom_list_tile.dart';
-import 'package:delivery/views/historial.dart';
-import 'package:delivery/views/home_owner.dart';
-import 'package:delivery/views/notification.dart';
-import 'package:delivery/views/order_view.dart';
+import 'package:ecosecha_app/components/drawer/bottom_user_info.dart';
+import 'package:ecosecha_app/components/drawer/header.dart';
+import 'package:ecosecha_app/components/items/custom_list_tile.dart';
+import 'package:ecosecha_app/views/historial.dart';
+import 'package:ecosecha_app/views/home_owner.dart';
+import 'package:ecosecha_app/views/notification.dart';
+import 'package:ecosecha_app/views/order_view.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawerOwner extends StatefulWidget {

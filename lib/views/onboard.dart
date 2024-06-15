@@ -1,8 +1,8 @@
 // ignore_for_file: must_be_immutable
-import 'package:delivery/controller/auth_controller.dart';
-import 'package:delivery/model/allinonboardscreen.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/styles/text_styles.dart';
+import 'package:ecosecha_app/controller/auth_controller.dart';
+import 'package:ecosecha_app/model/allinonboardscreen.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnboardScreen extends StatefulWidget {
@@ -18,15 +18,15 @@ class _OnboardScreenState extends State<OnboardScreen> {
 
   List<AllinOnboardModel> allinonboardlist = [
     AllinOnboardModel(
-        "assets/images/designf.jpg",
+        "assets/onBoard/OIG2.jpeg",
         "There are many variations of passages of Lorem Ipsum available. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
         "Prepard by exparts"),
     AllinOnboardModel(
-        "assets/images/designs.jpg",
+        "assets/onBoard/OIG3.jpeg",
         "There are many variations of passages of Lorem Ipsum available. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
         "Delivery to your home"),
     AllinOnboardModel(
-        "assets/images/designt.jpg",
+        "assets/onBoard/OIG4.jpeg",
         "There are many variations of passages of Lorem Ipsum available. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
         "Enjoy with everyone"),
   ];

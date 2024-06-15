@@ -2,14 +2,14 @@
 
 import 'dart:io';
 
-import 'package:delivery/controller/customer_controller.dart';
-import 'package:delivery/controller/owner_controller.dart';
+import 'package:ecosecha_app/controller/customer_controller.dart';
+import 'package:ecosecha_app/controller/owner_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class EditImagePage extends StatefulWidget {
-  const EditImagePage({Key? key, required this.image}) : super(key: key);
+  const EditImagePage({super.key, required this.image});
   final String image;
 
   @override

@@ -1,4 +1,4 @@
-// ignore_for_file: use_build_context_synchronously, avoid_print
+// ignore_for_file: use_build_context_synchronously, avoid_print, unrelated_type_equality_checks
 
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:ecosecha_app/controller/alert_dialog.dart';
