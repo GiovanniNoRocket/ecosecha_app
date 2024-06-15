@@ -31,8 +31,8 @@ class AuxController {
   }
 
   bool checkPasswordRequirements(String password) {
-    // La contraseña debe contener al menos 15 caracteres, incluyendo al menos una letra mayúscula, una minúscula y un número.
-    String passwordPattern = r'^[a-zA-Z0-9#+*\-.,;:_()\/]{15,}$';
+    // La contraseña debe contener al menos 8 caracteres, incluyendo al menos una letra mayúscula, una minúscula y un número.
+    String passwordPattern = r'^[a-zA-Z0-9#+*\-.,;:_()\/]{8,}$';
     RegExp regex = RegExp(passwordPattern);
     return regex.hasMatch(password);
   }
@@ -56,6 +56,6 @@ class AuxController {
   }
 
   bool isPasswordLengthValid(String password) {
-    return password.length <= 15;
+    return password.length <= 8;
   }
 }

@@ -58,7 +58,7 @@ class _SignUpState extends State<SignUp> {
             color: AppColors.blue,
           ),
           CustomHeader(
-            text: 'Sign Up.',
+            text: 'Registro',
             onTap: () {
               Navigator.pushReplacement(
                 context,
@@ -94,8 +94,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Name",
-                      hintText: "Jaeger",
+                      headingText: "Nombre",
+                      hintText: "Jose",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -107,8 +107,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Last name",
-                      hintText: "Kutski Saraki",
+                      headingText: "Apellidos",
+                      hintText: "Apellido apellido",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -120,8 +120,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Delivery preference",
-                      hintText: "Home, Store",
+                      headingText: "Formato de recogida preferido",
+                      hintText: "Ir al campo, Transportista",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -133,7 +133,7 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Phone",
+                      headingText: "Telefono",
                       hintText: "3214567980",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
@@ -146,7 +146,7 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Street address",
+                      headingText: "Direccion",
                       hintText: "Cartagena 32B Tower 2 Apto 1521",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
@@ -159,8 +159,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Email",
-                      hintText: "exampledelivery@gmail.com",
+                      headingText: "Correo electronico",
+                      hintText: "exampleecosecha@gmail.com",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -172,7 +172,7 @@ class _SignUpState extends State<SignUp> {
                         setState(() {
                           _errorTextEmail =
                               !(AuxController.validateEmail(value))
-                                  ? 'Invalid email'
+                                  ? 'Correo Invalido'
                                   : null;
                         });
                       },
@@ -185,8 +185,8 @@ class _SignUpState extends State<SignUp> {
                       textInputAction: TextInputAction.done,
                       textInputType: TextInputType.text,
                       controller: _passwordController,
-                      headingText: "Password",
-                      hintText: "At least 15 Character",
+                      headingText: "Contraseña",
+                      hintText: "Por lo menos 8 caracteres",
                       obsecureText: _obscureText1,
                       suffixIcon: IconButton(
                         icon: _obscureText1
@@ -203,7 +203,7 @@ class _SignUpState extends State<SignUp> {
                         setState(() {
                           _errorText1 = (AuxController()
                                   .isPasswordLengthValid(value))
-                              ? 'Password must be at least 15 characters long'
+                              ? 'La contraseña debe tener al menos 8 caracteres'
                               : null;
                         });
                       },
@@ -216,8 +216,8 @@ class _SignUpState extends State<SignUp> {
                       textInputAction: TextInputAction.done,
                       textInputType: TextInputType.text,
                       controller: _passwordConfController,
-                      headingText: "Password confirm",
-                      hintText: "At least 15 Character",
+                      headingText: "Confirmar contraseña",
+                      hintText: "Por lo menos 8 caracteres",
                       obsecureText: _obscureText2,
                       suffixIcon: IconButton(
                         icon: _obscureText2
@@ -234,7 +234,7 @@ class _SignUpState extends State<SignUp> {
                         setState(() {
                           _errorText2 = (AuxController()
                                   .isPasswordLengthValid(value))
-                              ? 'Password must be at least 15 characters long'
+                              ? 'La contraseña debe tener al menos 8 caracteres'
                               : null;
                         });
                       },
@@ -244,7 +244,7 @@ class _SignUpState extends State<SignUp> {
                     ),
                     Container(
                       alignment: Alignment.center,
-                      child: const Text("Add image to your profile"),
+                      child: const Text("Agregar imagen de perfil"),
                     ),
                     const SizedBox(
                       height: 16,
