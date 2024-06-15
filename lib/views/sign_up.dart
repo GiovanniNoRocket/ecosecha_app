@@ -2,15 +2,15 @@
 
 import 'dart:io';
 
-import 'package:delivery/components/items/custom_button.dart';
-import 'package:delivery/components/items/custom_formfield.dart';
-import 'package:delivery/components/items/custom_header.dart';
-import 'package:delivery/components/items/custom_richtext.dart';
-import 'package:delivery/controller/alert_dialog.dart';
-import 'package:delivery/controller/aux_controller.dart';
-import 'package:delivery/controller/customer_controller.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/sign_in.dart';
+import 'package:ecosecha_app/components/items/custom_button.dart';
+import 'package:ecosecha_app/components/items/custom_formfield.dart';
+import 'package:ecosecha_app/components/items/custom_header.dart';
+import 'package:ecosecha_app/components/items/custom_richtext.dart';
+import 'package:ecosecha_app/controller/alert_dialog.dart';
+import 'package:ecosecha_app/controller/aux_controller.dart';
+import 'package:ecosecha_app/controller/customer_controller.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 

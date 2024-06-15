@@ -2,11 +2,11 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:delivery/controller/alert_dialog.dart';
-import 'package:delivery/controller/auth_controller.dart';
-import 'package:delivery/controller/aux_controller.dart';
-import 'package:delivery/model/owner.dart';
-import 'package:delivery/views/verify_email_page.dart';
+import 'package:ecosecha_app/controller/alert_dialog.dart';
+import 'package:ecosecha_app/controller/auth_controller.dart';
+import 'package:ecosecha_app/controller/aux_controller.dart';
+import 'package:ecosecha_app/model/owner.dart';
+import 'package:ecosecha_app/views/verify_email_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:flutter/material.dart';
@@ -62,7 +62,7 @@ class OwnerController {
             String downloadURL = await reference.getDownloadURL();
             print("Imagen subida con éxito. URL: $downloadURL");
 
-            Owner owner = Owner(ownerName, ownerLastName, ownerPhone,
+            Campesino owner = Campesino(ownerName, ownerLastName, ownerPhone,
                 ownerStreetAddress, ownerEmail, downloadURL, uid, company);
 
             await FirebaseFirestore.instance
@@ -174,20 +174,20 @@ class OwnerController {
     return false;
   }
 
-  Future<List<Owner>> getOwnerDetails() async {
+  Future<List<Campesino>> getOwnerDetails() async {
     FirebaseFirestore firestore = FirebaseFirestore.instance;
 
     try {
       // Realiza la consulta a Firebase Firestore
       QuerySnapshot snapshot = await firestore.collection('owners').get();
 
-      // Inicializa una lista para almacenar los owners
-      List<Owner> owner = [];
-      // Recorre los documentos y crea instancias de la clase Owner
+      // Inicializa una lista para almacenar los campesinos
+      List<Campesino> owner = [];
+      // Recorre los documentos y crea instancias de la clase Campesino
       for (var doc in snapshot.docs) {
         var data = doc.data() as Map<String, dynamic>;
-        owner.add(Owner.fromJson(
-            data)); // Asumiendo que Owner tiene un método fromJson adecuado
+        owner.add(Campesino.fromJson(
+            data)); // Asumiendo que Campesino tiene un método fromJson adecuado
       }
       // Devuelve la lista de owners
       return owner;

@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:delivery/components/appbar_widget.dart';
+import 'package:ecosecha_app/components/appbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
 

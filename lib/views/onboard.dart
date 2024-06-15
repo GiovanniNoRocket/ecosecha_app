@@ -1,8 +1,8 @@
 // ignore_for_file: must_be_immutable
-import 'package:delivery/controller/auth_controller.dart';
-import 'package:delivery/model/allinonboardscreen.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/styles/text_styles.dart';
+import 'package:ecosecha_app/controller/auth_controller.dart';
+import 'package:ecosecha_app/model/allinonboardscreen.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnboardScreen extends StatefulWidget {

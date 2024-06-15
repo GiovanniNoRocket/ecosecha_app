@@ -2,16 +2,16 @@
 
 import 'dart:async';
 
-import 'package:delivery/components/display_image_widget.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/components/profile/edit_address.dart';
-import 'package:delivery/components/profile/edit_email.dart';
-import 'package:delivery/components/profile/edit_image.dart';
-import 'package:delivery/components/profile/edit_last_name.dart';
-import 'package:delivery/components/profile/edit_name.dart';
-import 'package:delivery/components/profile/edit_phone.dart';
-import 'package:delivery/controller/person_controller.dart';
-import 'package:delivery/views/home_customer.dart';
+import 'package:ecosecha_app/components/display_image_widget.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/components/profile/edit_address.dart';
+import 'package:ecosecha_app/components/profile/edit_email.dart';
+import 'package:ecosecha_app/components/profile/edit_image.dart';
+import 'package:ecosecha_app/components/profile/edit_last_name.dart';
+import 'package:ecosecha_app/components/profile/edit_name.dart';
+import 'package:ecosecha_app/components/profile/edit_phone.dart';
+import 'package:ecosecha_app/controller/person_controller.dart';
+import 'package:ecosecha_app/views/home_customer.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePageCustomer extends StatefulWidget {

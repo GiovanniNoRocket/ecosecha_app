@@ -1,8 +1,8 @@
-import 'package:delivery/model/people.dart';
+import 'package:ecosecha_app/model/people.dart';
 
 class Customer extends People {
   final String
-      deliveryPreference; //omo recogida en tienda, entrega a domicilio, puntos de recogida
+      deliveryPreference; //Como recogida en tienda, entrega por transportista
   Customer(
     String name,
     String lastName,

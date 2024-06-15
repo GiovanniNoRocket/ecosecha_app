@@ -2,10 +2,10 @@
 
 import 'dart:async';
 
-import 'package:delivery/controller/notification_controller.dart';
-import 'package:delivery/controller/shopping_controller.dart';
-import 'package:delivery/firebase_options.dart';
-import 'package:delivery/views/onboard.dart';
+import 'package:ecosecha_app/controller/notification_controller.dart';
+import 'package:ecosecha_app/controller/shopping_controller.dart';
+import 'package:ecosecha_app/firebase_options.dart';
+import 'package:ecosecha_app/views/onboard.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

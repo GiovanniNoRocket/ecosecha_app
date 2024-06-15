@@ -1,16 +1,16 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:delivery/components/SearchWidget.dart';
-import 'package:delivery/components/drawer/custom_drawer_customer.dart';
-import 'package:delivery/components/items/category_item.dart';
-import 'package:delivery/components/items/data.dart';
-import 'package:delivery/components/items/feature_item.dart';
-import 'package:delivery/components/items/popular_item.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/controller/product_controller.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/notification.dart';
+import 'package:ecosecha_app/components/SearchWidget.dart';
+import 'package:ecosecha_app/components/drawer/custom_drawer_customer.dart';
+import 'package:ecosecha_app/components/items/category_item.dart';
+import 'package:ecosecha_app/components/items/data.dart';
+import 'package:ecosecha_app/components/items/feature_item.dart';
+import 'package:ecosecha_app/components/items/popular_item.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/controller/product_controller.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

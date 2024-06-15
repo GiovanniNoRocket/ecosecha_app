@@ -1,10 +1,10 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print, library_private_types_in_public_api
 
-import 'package:delivery/components/animation/ScaleRoute.dart';
-import 'package:delivery/components/items/custom_formfield.dart';
-import 'package:delivery/components/nav_bar_owner.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/views/home_owner.dart';
+import 'package:ecosecha_app/components/animation/ScaleRoute.dart';
+import 'package:ecosecha_app/components/items/custom_formfield.dart';
+import 'package:ecosecha_app/components/nav_bar_owner.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/views/home_owner.dart';
 import 'package:flutter/material.dart';
 //import 'package:image_picker/image_picker.dart';
 

@@ -1,4 +1,4 @@
-import 'package:delivery/styles/app_colors.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 

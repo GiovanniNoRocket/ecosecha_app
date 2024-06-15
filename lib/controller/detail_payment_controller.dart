@@ -1,10 +1,10 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:delivery/controller/alert_dialog.dart';
-import 'package:delivery/controller/aux_controller.dart';
-import 'package:delivery/controller/owner_controller.dart';
-import 'package:delivery/model/detail_payment.dart';
+import 'package:ecosecha_app/controller/alert_dialog.dart';
+import 'package:ecosecha_app/controller/aux_controller.dart';
+import 'package:ecosecha_app/controller/owner_controller.dart';
+import 'package:ecosecha_app/model/detail_payment.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
