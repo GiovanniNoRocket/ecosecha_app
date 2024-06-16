@@ -11,8 +11,8 @@ class AuxController {
   }
 
   static bool validatePasswords(String password, String passwordConf) {
-    // La contraseña debe contener al menos 10 caracteres, incluyendo al menos una letra mayúscula, una minúscula y un número.
-    String passwordPattern = r'^[a-zA-Z0-9#+*\-.,;:_()\/]{15,}$';
+    // La contraseña debe contener al menos 8 caracteres, incluyendo al menos una letra mayúscula, una minúscula y un número.
+    String passwordPattern = r'^[a-zA-Z0-9#+*\-.,;:_()\/]{8,}$';
     RegExp regex = RegExp(passwordPattern);
 
     if (password != passwordConf) {
