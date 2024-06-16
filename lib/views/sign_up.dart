@@ -83,13 +83,31 @@ class _SignUpState extends State<SignUp> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 200,
-                      width: MediaQuery.of(context).size.width * 0.8,
-                      margin: EdgeInsets.only(
-                        left: MediaQuery.of(context).size.width * 0.09,
-                      ),
-                      child: Image.asset("assets/images/login.png"),
-                    ),
+                        height: 200,
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        margin: EdgeInsets.only(
+                          left: MediaQuery.of(context).size.width * 0.09,
+                        ),
+                        child: const CircleAvatar(
+                          radius: 100,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            radius: 100,
+                            backgroundColor: Colors
+                                .transparent, // Make the inner circle transparent
+                            child: AspectRatio(
+                              aspectRatio:
+                                  1, // Maintain aspect ratio of the image
+                              child: ClipOval(
+                                child: Image(
+                                  image: AssetImage('assets/ecosecha_logo.png'),
+                                  fit: BoxFit
+                                      .contain, // Fill the available space
+                                ),
+                              ),
+                            ),
+                          ),
+                        )),
                     const SizedBox(
                       height: 16,
                     ),
