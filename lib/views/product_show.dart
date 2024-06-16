@@ -42,7 +42,7 @@ class _ProductShowState extends State<ProductShow> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Product information"),
+        title: const Text("Informacion del producto"),
         centerTitle: true,
         leading: IconButton(
           icon: const Icon(
@@ -67,8 +67,8 @@ class _ProductShowState extends State<ProductShow> {
         child: Column(
           children: <Widget>[
             CustomFormField(
-              headingText: "Product",
-              hintText: "Example: soup chicken",
+                headingText: "Producto",
+                hintText: "Ejemplo: Yuca",
               obsecureText: false,
               suffixIcon: const Icon(Icons.food_bank_rounded),
               textInputType: TextInputType.name,
@@ -79,8 +79,8 @@ class _ProductShowState extends State<ProductShow> {
             ),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Quantity",
-                hintText: "Example: 12",
+                headingText: "Cantidad en kg",
+                hintText: "Ejemplo: 12",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.unfold_more_double_sharp),
                 textInputType: TextInputType.number,
@@ -90,8 +90,8 @@ class _ProductShowState extends State<ProductShow> {
                 readOnly: true),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Price",
-                hintText: "Example: 12000",
+                headingText: "Precio por kg",
+                hintText: "Ejemplo: 12000",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.monetization_on_outlined),
                 textInputType: TextInputType.number,
@@ -101,8 +101,8 @@ class _ProductShowState extends State<ProductShow> {
                 readOnly: true),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Category",
-                hintText: "Example: Fast food",
+                headingText: "Categoría",
+                hintText: "Ejemplo: Tuberculos",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.category_rounded),
                 textInputType: TextInputType.text,
@@ -112,8 +112,8 @@ class _ProductShowState extends State<ProductShow> {
                 readOnly: true),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Preparation time",
-                hintText: "Example: 30 minuts",
+                headingText: "Tiempo de cosechado",
+                hintText: "Ejemplo: 1 dias(0 dias si no se ha cosechado)",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.timelapse_outlined),
                 textInputType: TextInputType.text,
@@ -123,8 +123,8 @@ class _ProductShowState extends State<ProductShow> {
                 readOnly: true),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Description",
-                hintText: "Example: Prepare with meal and salad the apples",
+                headingText: "Descripción",
+                hintText: "Ejemplo: Yuca fresca de la mejor calidad",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.description),
                 textInputType: TextInputType.text,

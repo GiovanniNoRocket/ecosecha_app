@@ -90,7 +90,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
           children: <Widget>[
             CustomFormField(
                 headingText: "Producto",
-                hintText: "Ejemplo: sopa de pollo",
+                hintText: "Ejemplo: Yuca",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.food_bank_rounded),
                 textInputType: TextInputType.name,
@@ -99,7 +99,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Cantidad",
+                headingText: "Cantidad en kg",
                 hintText: "Ejemplo: 12",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.unfold_more_double_sharp),
@@ -109,7 +109,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Precio",
+                headingText: "Precio por kg",
                 hintText: "Ejemplo: 12000",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.monetization_on_outlined),
@@ -120,7 +120,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
             const SizedBox(height: 16.0),
             CustomFormField(
                 headingText: "Categoría",
-                hintText: "Ejemplo: Comida rápida",
+                hintText: "Ejemplo: Tuberculos",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.category_rounded),
                 textInputType: TextInputType.text,
@@ -129,8 +129,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Tiempo de preparación",
-                hintText: "Ejemplo: 30 minutos",
+                headingText: "Tiempo de cosechado",
+                hintText: "Ejemplo: 1 dias(0 dias si no se ha cosechado)",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.timelapse_outlined),
                 textInputType: TextInputType.text,
@@ -140,7 +140,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
             const SizedBox(height: 16.0),
             CustomFormField(
                 headingText: "Descripción",
-                hintText: "Ejemplo: Preparada con carne y ensalada de manzanas",
+                hintText: "Ejemplo: Yuca fresca de la mejor calidad",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.description),
                 textInputType: TextInputType.text,

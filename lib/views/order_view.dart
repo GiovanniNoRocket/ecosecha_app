@@ -191,7 +191,7 @@ class _OrderViewState extends State<OrderView> {
                                     MaterialPageRoute(
                                       builder: (context) => HistorialDetailItem(
                                         products: food.products,
-                                        title: 'Purchase detail',
+                                        title: 'Detalles de la orden',
                                         detailPaymentId: food.detailPaymentId,
                                         active: true,
                                       ),
