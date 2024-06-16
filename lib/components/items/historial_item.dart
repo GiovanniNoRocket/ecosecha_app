@@ -1,15 +1,15 @@
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/components/items/historial_detail_item.dart';
-import 'package:delivery/model/detail_payment.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/components/items/historial_detail_item.dart';
+import 'package:ecosecha_app/model/detail_payment.dart';
 import 'package:flutter/material.dart';
 
 class HistorialFoodItem extends StatelessWidget {
   final DetailPayment food;
 
   const HistorialFoodItem({
-    Key? key,
+    super.key,
     required this.food,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -2,15 +2,15 @@
 
 import 'dart:io';
 
-import 'package:delivery/components/items/custom_button.dart';
-import 'package:delivery/components/items/custom_formfield.dart';
-import 'package:delivery/components/items/custom_header.dart';
-import 'package:delivery/components/items/custom_richtext.dart';
-import 'package:delivery/controller/alert_dialog.dart';
-import 'package:delivery/controller/aux_controller.dart';
-import 'package:delivery/controller/customer_controller.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/sign_in.dart';
+import 'package:ecosecha_app/components/items/custom_button.dart';
+import 'package:ecosecha_app/components/items/custom_formfield.dart';
+import 'package:ecosecha_app/components/items/custom_header.dart';
+import 'package:ecosecha_app/components/items/custom_richtext.dart';
+import 'package:ecosecha_app/controller/alert_dialog.dart';
+import 'package:ecosecha_app/controller/aux_controller.dart';
+import 'package:ecosecha_app/controller/customer_controller.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -83,13 +83,31 @@ class _SignUpState extends State<SignUp> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 200,
-                      width: MediaQuery.of(context).size.width * 0.8,
-                      margin: EdgeInsets.only(
-                        left: MediaQuery.of(context).size.width * 0.09,
-                      ),
-                      child: Image.asset("assets/images/login.png"),
-                    ),
+                        height: 200,
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        margin: EdgeInsets.only(
+                          left: MediaQuery.of(context).size.width * 0.09,
+                        ),
+                        child: const CircleAvatar(
+                          radius: 100,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            radius: 100,
+                            backgroundColor: Colors
+                                .transparent, // Make the inner circle transparent
+                            child: AspectRatio(
+                              aspectRatio:
+                                  1, // Maintain aspect ratio of the image
+                              child: ClipOval(
+                                child: Image(
+                                  image: AssetImage('assets/ecosecha_logo.png'),
+                                  fit: BoxFit
+                                      .contain, // Fill the available space
+                                ),
+                              ),
+                            ),
+                          ),
+                        )),
                     const SizedBox(
                       height: 16,
                     ),

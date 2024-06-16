@@ -3,9 +3,9 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:delivery/controller/alert_dialog.dart';
-import 'package:delivery/controller/aux_controller.dart';
-import 'package:delivery/model/product.dart';
+import 'package:ecosecha_app/controller/alert_dialog.dart';
+import 'package:ecosecha_app/controller/aux_controller.dart';
+import 'package:ecosecha_app/model/product.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;

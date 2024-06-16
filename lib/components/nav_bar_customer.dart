@@ -1,10 +1,10 @@
 // ignore_for_file: library_private_types_in_public_api, no_leading_underscores_for_local_identifiers
 
-import 'package:delivery/components/items/bottombar_item.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/food_order.dart';
-import 'package:delivery/views/home_customer.dart';
-import 'package:delivery/views/profile_page_customer.dart';
+import 'package:ecosecha_app/components/items/bottombar_item.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/food_order.dart';
+import 'package:ecosecha_app/views/home_customer.dart';
+import 'package:ecosecha_app/views/profile_page_customer.dart';
 import 'package:flutter/material.dart';
 
 class NavBarCustomer extends StatefulWidget {

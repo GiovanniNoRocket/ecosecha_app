@@ -2,16 +2,16 @@
 
 import 'dart:async';
 
-import 'package:delivery/components/display_image_widget.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/components/profile/edit_address.dart';
-import 'package:delivery/components/profile/edit_email.dart';
-import 'package:delivery/components/profile/edit_image.dart';
-import 'package:delivery/components/profile/edit_last_name.dart';
-import 'package:delivery/components/profile/edit_name.dart';
-import 'package:delivery/components/profile/edit_phone.dart';
-import 'package:delivery/controller/person_controller.dart';
-import 'package:delivery/views/home_customer.dart';
+import 'package:ecosecha_app/components/display_image_widget.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/components/profile/edit_address.dart';
+import 'package:ecosecha_app/components/profile/edit_email.dart';
+import 'package:ecosecha_app/components/profile/edit_image.dart';
+import 'package:ecosecha_app/components/profile/edit_last_name.dart';
+import 'package:ecosecha_app/components/profile/edit_name.dart';
+import 'package:ecosecha_app/components/profile/edit_phone.dart';
+import 'package:ecosecha_app/controller/person_controller.dart';
+import 'package:ecosecha_app/views/home_customer.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePageCustomer extends StatefulWidget {
@@ -35,7 +35,7 @@ class _ProfilePageCustomerState extends State<ProfilePageCustomer> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Edit Profile',
+          'Editar perfil',
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w700,
@@ -94,14 +94,14 @@ class _ProfilePageCustomerState extends State<ProfilePageCustomer> {
                         ),
                       ),
                       buildUserInfoDisplay(
-                          userInfoList[0], 'Name', const EditNameFormPage()),
-                      buildUserInfoDisplay(userInfoList[1], 'Last Name',
+                          userInfoList[0], 'Nombre', const EditNameFormPage()),
+                      buildUserInfoDisplay(userInfoList[1], 'Apellidos',
                           const EditLastNameFormPage()),
                       buildUserInfoDisplay(
-                          userInfoList[2], 'Phone', const EditPhoneFormPage()),
+                          userInfoList[2], 'Teléfono', const EditPhoneFormPage()),
                       buildUserInfoDisplay(
-                          userInfoList[3], 'Email', const EditEmailFormPage()),
-                      buildUserInfoDisplay(userInfoList[4], 'Address',
+                          userInfoList[3], 'Correo electrónico', const EditEmailFormPage()),
+                      buildUserInfoDisplay(userInfoList[4], 'Dirección',
                           const EditAddressFormPage()),
                     ],
                   );

@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
-import 'package:delivery/components/animation/ScaleRoute.dart';
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/controller/shopping_controller.dart';
-import 'package:delivery/model/cart.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/food_detail.dart';
+import 'package:ecosecha_app/components/animation/ScaleRoute.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/controller/shopping_controller.dart';
+import 'package:ecosecha_app/model/cart.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/food_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

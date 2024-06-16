@@ -1,15 +1,15 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:delivery/components/appbar_widget.dart';
-import 'package:delivery/controller/customer_controller.dart';
-import 'package:delivery/controller/owner_controller.dart';
+import 'package:ecosecha_app/components/appbar_widget.dart';
+import 'package:ecosecha_app/controller/customer_controller.dart';
+import 'package:ecosecha_app/controller/owner_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:string_validator/string_validator.dart';
 
 // This class handles the Page to edit the Name Section of the User Profile.
 class EditNameFormPage extends StatefulWidget {
-  const EditNameFormPage({Key? key}) : super(key: key);
+  const EditNameFormPage({super.key});
 
   @override
   EditNameFormPageState createState() {
@@ -41,7 +41,7 @@ class EditNameFormPageState extends State<EditNameFormPage> {
               const SizedBox(
                   width: 330,
                   child: Text(
-                    "What's Your Name?",
+                    "¿Cómo te llamas?",
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
@@ -60,14 +60,14 @@ class EditNameFormPageState extends State<EditNameFormPage> {
                             // Handles Form Validation for First Name
                             validator: (value) {
                               if (value == null || value.isEmpty) {
-                                return 'Please enter your first name';
+                                return 'Por favor, ingrese su nombre';
                               } else if (!isAlpha(value)) {
-                                return 'Only Letters Please';
+                                return 'Sólo letras, por favor';
                               }
                               return null;
                             },
                             decoration:
-                                const InputDecoration(labelText: 'First Name'),
+                                const InputDecoration(labelText: 'Primer nombre'),
                             controller: firstNameController,
                           ))),
                   Padding(
@@ -86,7 +86,7 @@ class EditNameFormPageState extends State<EditNameFormPage> {
                               return null;
                             },*/
                             decoration:
-                                const InputDecoration(labelText: 'Second Name'),
+                                const InputDecoration(labelText: 'Segundo nombre'),
                             controller: secondNameController,
                           )))
                 ],
@@ -121,7 +121,7 @@ class EditNameFormPageState extends State<EditNameFormPage> {
                             }
                           },
                           child: const Text(
-                            'Update',
+                            'Guardar',
                             style: TextStyle(fontSize: 15),
                           ),
                         ),

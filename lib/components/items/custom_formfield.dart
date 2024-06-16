@@ -1,5 +1,5 @@
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/styles/text_styles.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomFormField extends StatelessWidget {

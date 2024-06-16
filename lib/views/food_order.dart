@@ -1,11 +1,11 @@
 // ignore_for_file: must_be_immutable, avoid_unnecessary_containers, library_private_types_in_public_api, file_names, unused_element
 
-import 'package:delivery/components/items/custom_button.dart';
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/controller/detail_payment_controller.dart';
-import 'package:delivery/controller/shopping_controller.dart';
-import 'package:delivery/styles/app_colors.dart';
+import 'package:ecosecha_app/components/items/custom_button.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/controller/detail_payment_controller.dart';
+import 'package:ecosecha_app/controller/shopping_controller.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -44,7 +44,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
         ),
         title: const Center(
           child: Text(
-            "Item Carts",
+            "Artículos agregados al carrito",
             style: TextStyle(
                 color: Color(0xFF3a3737),
                 fontWeight: FontWeight.w600,
@@ -391,7 +391,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
               Container(
                 padding: const EdgeInsets.only(left: 5),
                 child: const Text(
-                  "Payment Method",
+                  "Método de pago",
                   style: TextStyle(
                     fontSize: 20,
                     color: Color(0xFF3a3a3b),
@@ -468,7 +468,7 @@ class PaymentMethodWidget extends StatelessWidget {
                   Container(
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_credit_card.png",
+                      "assets/ic_credit_card.png",
                       width: 50,
                       height: 50,
                     ),
@@ -479,7 +479,7 @@ class PaymentMethodWidget extends StatelessWidget {
                     child: Form(
                       key: formKey,
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 5),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -493,7 +493,7 @@ class PaymentMethodWidget extends StatelessWidget {
                                 ),
                               ),
                               hint: const Text(
-                                'Select payment method',
+                                'Seleccione método de pago',
                                 style: TextStyle(fontSize: 14),
                               ),
                               items: genderItems
@@ -580,7 +580,7 @@ class PromoCodeWidget extends StatelessWidget {
                       const BorderSide(color: Color(0xFFe6e1e1), width: 1.0),
                   borderRadius: BorderRadius.circular(7)),
               fillColor: Colors.white,
-              hintText: 'Add Your Promo Code',
+              hintText: 'Añada su código promocional',
               filled: true,
               suffixIcon: IconButton(
                   icon: const Icon(

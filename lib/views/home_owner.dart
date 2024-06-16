@@ -1,20 +1,20 @@
 // ignore_for_file: library_private_types_in_public_api, deprecated_member_use, avoid_print
 
-import 'package:delivery/components/SearchWidget.dart';
-import 'package:delivery/components/drawer/custom_drawer_owner.dart';
-import 'package:delivery/components/items/custom_image.dart';
-import 'package:delivery/components/nav_bar_owner.dart';
-import 'package:delivery/controller/product_controller.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/notification.dart';
-import 'package:delivery/views/product_show.dart';
-import 'package:delivery/views/product_update.dart';
+import 'package:ecosecha_app/components/SearchWidget.dart';
+import 'package:ecosecha_app/components/drawer/custom_drawer_owner.dart';
+import 'package:ecosecha_app/components/items/custom_image.dart';
+import 'package:ecosecha_app/components/nav_bar_owner.dart';
+import 'package:ecosecha_app/controller/product_controller.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/notification.dart';
+import 'package:ecosecha_app/views/product_show.dart';
+import 'package:ecosecha_app/views/product_update.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenOwner extends StatefulWidget {
-  const HomeScreenOwner({Key? key}) : super(key: key);
+  const HomeScreenOwner({super.key});
 
   @override
   _HomeScreenOwnerState createState() => _HomeScreenOwnerState();
@@ -120,9 +120,7 @@ class _HomeScreenOwnerState extends State<HomeScreenOwner> {
         borderRadius: BorderRadius.circular(15),
         image: const DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-          ),
+          image: AssetImage('assets/Home.jpeg'),
         ),
       ),
     );

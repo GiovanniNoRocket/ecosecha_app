@@ -9,9 +9,9 @@ class BottomUserInfo extends StatefulWidget {
   final bool isCollapsed;
 
   const BottomUserInfo({
-    Key? key,
+    super.key,
     required this.isCollapsed,
-  }) : super(key: key);
+  });
 
   @override
   _BottomUserInfoState createState() => _BottomUserInfoState();

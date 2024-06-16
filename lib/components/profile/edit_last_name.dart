@@ -1,15 +1,15 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:delivery/components/appbar_widget.dart';
-import 'package:delivery/controller/customer_controller.dart';
-import 'package:delivery/controller/owner_controller.dart';
+import 'package:ecosecha_app/components/appbar_widget.dart';
+import 'package:ecosecha_app/controller/customer_controller.dart';
+import 'package:ecosecha_app/controller/owner_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:string_validator/string_validator.dart';
 
 // This class handles the Page to edit the Name Section of the User Profile.
 class EditLastNameFormPage extends StatefulWidget {
-  const EditLastNameFormPage({Key? key}) : super(key: key);
+  const EditLastNameFormPage({super.key});
 
   @override
   EditLastNameFormPageState createState() {
@@ -41,7 +41,7 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
               const SizedBox(
                   width: 330,
                   child: Text(
-                    "What's Your Last Name?",
+                    "¿Cuáles son tus apellido?",
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
@@ -60,14 +60,14 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
                             // Handles Form Validation for First Name
                             validator: (value) {
                               if (value == null || value.isEmpty) {
-                                return 'Please enter your first last name';
+                                return 'Por favor ingresa tu primer apellido';
                               } else if (!isAlpha(value)) {
-                                return 'Only Letters Please';
+                                return 'Solo letras, por favor';
                               }
                               return null;
                             },
                             decoration: const InputDecoration(
-                                labelText: 'First Last Name'),
+                                labelText: 'Primer apellido'),
                             controller: firstLastNameController,
                           ))),
                   Padding(
@@ -79,14 +79,14 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
                             // Handles Form Validation for Last Name
                             validator: (value) {
                               if (value == null || value.isEmpty) {
-                                return 'Please enter your last name';
+                                return 'Por favor ingresa tu apellido';
                               } else if (!isAlpha(value)) {
-                                return 'Only Letters Please';
+                                return 'Solo letras, por favor';
                               }
                               return null;
                             },
                             decoration:
-                                const InputDecoration(labelText: 'Last Name'),
+                                const InputDecoration(labelText: 'Segundo apellido'),
                             controller: secondLastNameController,
                           )))
                 ],
@@ -121,7 +121,7 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
                             }
                           },
                           child: const Text(
-                            'Update',
+                            'Guardar',
                             style: TextStyle(fontSize: 15),
                           ),
                         ),

@@ -1,15 +1,15 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:delivery/components/appbar_widget.dart';
-import 'package:delivery/controller/customer_controller.dart';
-import 'package:delivery/controller/owner_controller.dart';
+import 'package:ecosecha_app/components/appbar_widget.dart';
+import 'package:ecosecha_app/controller/customer_controller.dart';
+import 'package:ecosecha_app/controller/owner_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:string_validator/string_validator.dart';
 
 // This class handles the Page to edit the Phone Section of the User Profile.
 class EditPhoneFormPage extends StatefulWidget {
-  const EditPhoneFormPage({Key? key}) : super(key: key);
+  const EditPhoneFormPage({super.key});
   @override
   EditPhoneFormPageState createState() {
     return EditPhoneFormPageState();
@@ -39,9 +39,9 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
                 const SizedBox(
                     width: 320,
                     child: Text(
-                      "What's Your Phone Number?",
+                      "¿Cuál es su número de teléfono?",
                       style:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     )),
                 Padding(
                     padding: const EdgeInsets.only(top: 40),
@@ -52,17 +52,17 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
                           // Handles Form Validation
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter your phone number';
+                              return 'Por favor, introduzca su número de teléfono';
                             } else if (isAlpha(value)) {
-                              return 'Only Numbers Please';
+                              return 'Solo números por favor';
                             } else if (value.length < 10) {
-                              return 'Please enter a VALID phone number';
+                              return 'Por favor, ingrese un número de teléfono valido';
                             }
                             return null;
                           },
                           controller: phoneController,
                           decoration: const InputDecoration(
-                            labelText: 'Your Phone Number',
+                            labelText: 'Su número de teléfono',
                           ),
                         ))),
                 Padding(
@@ -92,7 +92,7 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
                               }
                             },
                             child: const Text(
-                              'Update',
+                              'Guardar',
                               style: TextStyle(fontSize: 15),
                             ),
                           ),

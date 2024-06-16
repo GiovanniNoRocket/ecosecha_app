@@ -1,12 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:delivery/components/appbar_widget.dart';
+import 'package:ecosecha_app/components/appbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
 
 // This class handles the Page to edit the Email Section of the User Profile.
 class EditEmailFormPage extends StatefulWidget {
-  const EditEmailFormPage({Key? key}) : super(key: key);
+  const EditEmailFormPage({super.key});
 
   @override
   EditEmailFormPageState createState() {
@@ -37,7 +37,7 @@ class EditEmailFormPageState extends State<EditEmailFormPage> {
                 const SizedBox(
                     width: 320,
                     child: Text(
-                      "What's your email?",
+                        "¿Cuál es tu correo electrónico?",
                       style:
                           TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.left,
@@ -51,12 +51,12 @@ class EditEmailFormPageState extends State<EditEmailFormPage> {
                           // Handles Form Validation
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter your email.';
+                              return 'Por favor, ingresa tu correo electrónico.';
                             }
                             return null;
                           },
                           decoration: const InputDecoration(
-                              labelText: 'Your email address'),
+                              labelText: 'Su dirección de correo electrónico'),
                           controller: emailController,
                         ))),
                 Padding(
@@ -87,7 +87,7 @@ class EditEmailFormPageState extends State<EditEmailFormPage> {
                               }
                             },
                             child: const Text(
-                              'Update',
+                              'Guardar',
                               style: TextStyle(fontSize: 15),
                             ),
                           ),

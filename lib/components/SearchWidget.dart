@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class SearchWidget extends StatelessWidget {
-  const SearchWidget({Key? key}) : super(key: key);
+  const SearchWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +29,8 @@ class SearchWidget extends StatelessWidget {
             Icons.sort,
             color: Color(0xFFfb3132),
           ),
-          hintStyle: TextStyle(color: Color(0xFFd0cece), fontSize: 18),
-          hintText: "What would you like to buy?",
+          hintStyle: TextStyle(color: Color(0xFFd0cece), fontSize: 16),
+          hintText: "¿Qué alimentos le gustaría comprar?",
         ),
       ),
     );

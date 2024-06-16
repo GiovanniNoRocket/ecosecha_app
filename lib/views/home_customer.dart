@@ -1,16 +1,16 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:delivery/components/SearchWidget.dart';
-import 'package:delivery/components/drawer/custom_drawer_customer.dart';
-import 'package:delivery/components/items/category_item.dart';
-import 'package:delivery/components/items/data.dart';
-import 'package:delivery/components/items/feature_item.dart';
-import 'package:delivery/components/items/popular_item.dart';
-import 'package:delivery/components/nav_bar_customer.dart';
-import 'package:delivery/controller/product_controller.dart';
-import 'package:delivery/model/product.dart';
-import 'package:delivery/styles/app_colors.dart';
-import 'package:delivery/views/notification.dart';
+import 'package:ecosecha_app/components/SearchWidget.dart';
+import 'package:ecosecha_app/components/drawer/custom_drawer_customer.dart';
+import 'package:ecosecha_app/components/items/category_item.dart';
+import 'package:ecosecha_app/components/items/data.dart';
+import 'package:ecosecha_app/components/items/feature_item.dart';
+import 'package:ecosecha_app/components/items/popular_item.dart';
+import 'package:ecosecha_app/components/nav_bar_customer.dart';
+import 'package:ecosecha_app/controller/product_controller.dart';
+import 'package:ecosecha_app/model/product.dart';
+import 'package:ecosecha_app/styles/app_colors.dart';
+import 'package:ecosecha_app/views/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -29,7 +29,7 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: const Text(
-          "What would you like to eat?",
+          "¿Qué le gustaría comprar?",
           style: TextStyle(
               color: Color(0xFF3a3737),
               fontSize: 16,
@@ -79,11 +79,11 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Popular foods",
+                  "Alimentos populares",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "See all",
+                  "Ver todos",
                   style: TextStyle(fontSize: 14, color: AppColors.darker),
                 ),
               ],
@@ -99,7 +99,7 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
           const Padding(
             padding: EdgeInsets.only(left: 15, right: 15),
             child: Text(
-              "Featured",
+              "Destacados",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
@@ -127,9 +127,7 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
         borderRadius: BorderRadius.circular(15),
         image: const DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-          ),
+          image: AssetImage("assets/Home.jpeg"),
         ),
       ),
     );
