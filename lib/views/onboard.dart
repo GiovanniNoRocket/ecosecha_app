@@ -18,17 +18,17 @@ class _OnboardScreenState extends State<OnboardScreen> {
 
   List<AllinOnboardModel> allinonboardlist = [
     AllinOnboardModel(
-        "assets/images/designf.jpg",
+        "assets/onBoard/OIG4.jpeg",
         "There are many variations of passages of Lorem Ipsum available. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
-        "Prepard by exparts"),
+        "Cultivado por expertos"),
     AllinOnboardModel(
-        "assets/images/designs.jpg",
+        "assets/onBoard/OIG3.jpeg",
         "There are many variations of passages of Lorem Ipsum available. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
-        "Delivery to your home"),
+        "Entrega en su domicilio"),
     AllinOnboardModel(
-        "assets/images/designt.jpg",
+        "assets/onBoard/OIG5.jpeg",
         "There are many variations of passages of Lorem Ipsum available. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
-        "Enjoy with everyone"),
+        "Disfruta con todos"),
   ];
 
   @override

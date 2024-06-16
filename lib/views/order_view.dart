@@ -8,6 +8,8 @@ import 'package:ecosecha_app/model/detail_payment.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class OrderView extends StatefulWidget {
+  const OrderView({super.key});
+
   @override
   _OrderViewState createState() => _OrderViewState();
 }

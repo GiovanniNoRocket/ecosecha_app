@@ -44,10 +44,11 @@ class DetailPaymentController {
           .doc(detailPaymentId)
           .set(detailPayment.toJson());
       Navigator.of(context).pop();
-      return true;
       print('Pago exitoso');
       showPersonalizedAlert(
           context, "Compra exitosa", AlertMessageType.success);
+
+      return true;
     } catch (e) {
       Navigator.of(context).pop();
       showPersonalizedAlert(

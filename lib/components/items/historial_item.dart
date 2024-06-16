@@ -7,9 +7,9 @@ class HistorialFoodItem extends StatelessWidget {
   final DetailPayment food;
 
   const HistorialFoodItem({
-    Key? key,
+    super.key,
     required this.food,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

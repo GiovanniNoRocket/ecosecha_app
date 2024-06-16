@@ -11,7 +11,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:raised_buttons/raised_buttons.dart';
 
 class FoodRegister extends StatefulWidget {
-  const FoodRegister({Key? key}) : super(key: key);
+  const FoodRegister({super.key});
 
   @override
   _FoodRegisterState createState() => _FoodRegisterState();

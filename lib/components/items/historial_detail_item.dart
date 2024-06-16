@@ -10,13 +10,12 @@ class HistorialDetailItem extends StatelessWidget {
   final bool active;
 
   const HistorialDetailItem(
-      {Key? key,
+      {super.key,
       required this.products,
       required this.title,
       required this.detailPaymentId,
       this.active = false
-      })
-      : super(key: key);
+      });
 
   @override
   Widget build(BuildContext context) {

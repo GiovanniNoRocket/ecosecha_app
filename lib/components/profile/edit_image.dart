@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class EditImagePage extends StatefulWidget {
-  const EditImagePage({Key? key, required this.image}) : super(key: key);
+  const EditImagePage({super.key, required this.image});
   final String image;
 
   @override

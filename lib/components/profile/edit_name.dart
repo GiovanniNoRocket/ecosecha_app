@@ -9,7 +9,7 @@ import 'package:string_validator/string_validator.dart';
 
 // This class handles the Page to edit the Name Section of the User Profile.
 class EditNameFormPage extends StatefulWidget {
-  const EditNameFormPage({Key? key}) : super(key: key);
+  const EditNameFormPage({super.key});
 
   @override
   EditNameFormPageState createState() {
