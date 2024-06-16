@@ -38,7 +38,7 @@ class _SigninState extends State<Signin> {
             color: AppColors.blue,
           ),
           CustomHeader(
-            text: 'Log In.',
+            text: 'Iniciar Sesión',
             onTap: () {
               Navigator.pushReplacement(
                   context,
@@ -70,16 +70,13 @@ class _SigninState extends State<Signin> {
                           backgroundColor: Colors.white,
                           child: CircleAvatar(
                             radius: 100,
-                            backgroundColor: Colors
-                                .transparent, // Make the inner circle transparent
+                            backgroundColor: Colors.transparent,
                             child: AspectRatio(
-                              aspectRatio:
-                                  1, // Maintain aspect ratio of the image
+                              aspectRatio: 1,
                               child: ClipOval(
                                 child: Image(
                                   image: AssetImage('assets/ecosecha_logo.png'),
-                                  fit: BoxFit
-                                      .contain, // Fill the available space
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
@@ -89,8 +86,8 @@ class _SigninState extends State<Signin> {
                       height: 20,
                     ),
                     CustomFormField(
-                      headingText: "Email",
-                      hintText: "exampledelivery@gmail.com",
+                      headingText: "Correo Electrónico",
+                      hintText: "ejemploentrega@gmail.com",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       controller: _emailController,
@@ -102,11 +99,11 @@ class _SigninState extends State<Signin> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Password",
+                      headingText: "Contraseña",
                       maxLines: 1,
                       textInputAction: TextInputAction.done,
                       textInputType: TextInputType.text,
-                      hintText: "At least 15 Character",
+                      hintText: "Al menos 8 caracteres",
                       obsecureText: _obscureText,
                       suffixIcon: IconButton(
                           icon: _obscureText
@@ -123,7 +120,7 @@ class _SigninState extends State<Signin> {
                         setState(() {
                           _errorTextPassword = (AuxController()
                                   .isPasswordLengthValid(value))
-                              ? 'Password must be at least 15 characters long'
+                              ? 'La contraseña debe tener al menos 8 caracteres'
                               : null;
                         });
                       },
@@ -143,7 +140,7 @@ class _SigninState extends State<Signin> {
                                           const ForgetScreen()));
                             },
                             child: Text(
-                              "Forgot Password?",
+                              "¿Olvidaste tu contraseña?",
                               style: TextStyle(
                                   color: AppColors.blue.withOpacity(0.7),
                                   fontWeight: FontWeight.w500),
@@ -156,11 +153,11 @@ class _SigninState extends State<Signin> {
                       onTap: () {
                         AuthController().signInUser(context, email, password);
                       },
-                      text: 'Sign In',
+                      text: 'Iniciar Sesión',
                     ),
                     CustomRichText(
-                      discription: "Don't already Have an account? ",
-                      text: "Sign Up",
+                      discription: "¿No tienes una cuenta? ",
+                      text: "Regístrate",
                       onTap: () {
                         Navigator.pushReplacement(
                             context,

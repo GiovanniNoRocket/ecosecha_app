@@ -35,7 +35,7 @@ class _ProfilePageOwnerState extends State<ProfilePageOwner> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Edit Profile',
+          'Editar perfil',
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w700,
@@ -73,7 +73,7 @@ class _ProfilePageOwnerState extends State<ProfilePageOwner> {
                 } else if (snapshot.hasError) {
                   // Muestra un mensaje de error si hay algún problema
                   print('Error: ${snapshot.error}');
-                  return const Text("Unexpected error");
+                  return const Text("Error inesperado");
                 } else {
                   // Muestra la información del usuario si la operación fue exitosa
                   List<String> userInfoList = snapshot.data!;
@@ -92,14 +92,14 @@ class _ProfilePageOwnerState extends State<ProfilePageOwner> {
                         ),
                       ),
                       buildUserInfoDisplay(
-                          userInfoList[0], 'Name', const EditNameFormPage()),
-                      buildUserInfoDisplay(userInfoList[1], 'Last Name',
+                          userInfoList[0], 'Nombre', const EditNameFormPage()),
+                      buildUserInfoDisplay(userInfoList[1], 'Apellido',
                           const EditLastNameFormPage()),
                       buildUserInfoDisplay(
-                          userInfoList[2], 'Phone', const EditPhoneFormPage()),
+                          userInfoList[2], 'Teléfono', const EditPhoneFormPage()),
                       buildUserInfoDisplay(
-                          userInfoList[3], 'Email', const EditEmailFormPage()),
-                      buildUserInfoDisplay(userInfoList[4], 'Address',
+                          userInfoList[3], 'Correo electrónico', const EditEmailFormPage()),
+                      buildUserInfoDisplay(userInfoList[4], 'Dirección',
                           const EditAddressFormPage()),
                     ],
                   );

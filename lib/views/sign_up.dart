@@ -58,7 +58,7 @@ class _SignUpState extends State<SignUp> {
             color: AppColors.blue,
           ),
           CustomHeader(
-            text: 'Registro',
+            text: 'Registrarse',
             onTap: () {
               Navigator.pushReplacement(
                 context,
@@ -93,16 +93,13 @@ class _SignUpState extends State<SignUp> {
                           backgroundColor: Colors.white,
                           child: CircleAvatar(
                             radius: 100,
-                            backgroundColor: Colors
-                                .transparent, // Make the inner circle transparent
+                            backgroundColor: Colors.transparent,
                             child: AspectRatio(
-                              aspectRatio:
-                                  1, // Maintain aspect ratio of the image
+                              aspectRatio: 1,
                               child: ClipOval(
                                 child: Image(
                                   image: AssetImage('assets/ecosecha_logo.png'),
-                                  fit: BoxFit
-                                      .contain, // Fill the available space
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
@@ -113,7 +110,7 @@ class _SignUpState extends State<SignUp> {
                     ),
                     CustomFormField(
                       headingText: "Nombre",
-                      hintText: "Jose",
+                      hintText: "Jaeger",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -125,8 +122,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Apellidos",
-                      hintText: "Apellido apellido",
+                      headingText: "Apellido",
+                      hintText: "Kutski Saraki",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -138,8 +135,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Formato de recogida preferido",
-                      hintText: "Ir al campo, Transportista",
+                      headingText: "Preferencia de entrega",
+                      hintText: "Casa, Tienda",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -151,7 +148,7 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Telefono",
+                      headingText: "Teléfono",
                       hintText: "3214567980",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
@@ -164,8 +161,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Direccion",
-                      hintText: "Cartagena 32B Tower 2 Apto 1521",
+                      headingText: "Dirección",
+                      hintText: "Cartagena 32B Torre 2 Apto 1521",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -177,8 +174,8 @@ class _SignUpState extends State<SignUp> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Correo electronico",
-                      hintText: "exampleecosecha@gmail.com",
+                      headingText: "Correo Electrónico",
+                      hintText: "exampledelivery@gmail.com",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       maxLines: 1,
@@ -190,7 +187,7 @@ class _SignUpState extends State<SignUp> {
                         setState(() {
                           _errorTextEmail =
                               !(AuxController.validateEmail(value))
-                                  ? 'Correo Invalido'
+                                  ? 'Correo electrónico no válido'
                                   : null;
                         });
                       },
@@ -204,7 +201,7 @@ class _SignUpState extends State<SignUp> {
                       textInputType: TextInputType.text,
                       controller: _passwordController,
                       headingText: "Contraseña",
-                      hintText: "Por lo menos 8 caracteres",
+                      hintText: "Al menos 15 caracteres",
                       obsecureText: _obscureText1,
                       suffixIcon: IconButton(
                         icon: _obscureText1
@@ -221,7 +218,7 @@ class _SignUpState extends State<SignUp> {
                         setState(() {
                           _errorText1 = (AuxController()
                                   .isPasswordLengthValid(value))
-                              ? 'La contraseña debe tener al menos 8 caracteres'
+                              ? 'La contraseña debe tener al menos 15 caracteres'
                               : null;
                         });
                       },
@@ -234,8 +231,8 @@ class _SignUpState extends State<SignUp> {
                       textInputAction: TextInputAction.done,
                       textInputType: TextInputType.text,
                       controller: _passwordConfController,
-                      headingText: "Confirmar contraseña",
-                      hintText: "Por lo menos 8 caracteres",
+                      headingText: "Confirmar Contraseña",
+                      hintText: "Al menos 15 caracteres",
                       obsecureText: _obscureText2,
                       suffixIcon: IconButton(
                         icon: _obscureText2
@@ -252,7 +249,7 @@ class _SignUpState extends State<SignUp> {
                         setState(() {
                           _errorText2 = (AuxController()
                                   .isPasswordLengthValid(value))
-                              ? 'La contraseña debe tener al menos 8 caracteres'
+                              ? 'La contraseña debe tener al menos 15 caracteres'
                               : null;
                         });
                       },
@@ -262,14 +259,13 @@ class _SignUpState extends State<SignUp> {
                     ),
                     Container(
                       alignment: Alignment.center,
-                      child: const Text("Agregar imagen de perfil"),
+                      child: const Text("Agrega una imagen a tu perfil"),
                     ),
                     const SizedBox(
                       height: 16,
                     ),
                     if (sampleImage.path.isNotEmpty)
                       Container(
-                        // Ajusta la altura según tus necesidades
                         alignment: Alignment.center,
                         child: ClipOval(
                           child: Image.file(
@@ -296,7 +292,7 @@ class _SignUpState extends State<SignUp> {
                           } catch (e) {
                             showPersonalizedAlert(
                               context,
-                              "Unexpected error",
+                              "Error inesperado",
                               AlertMessageType.error,
                             );
                           }
@@ -319,13 +315,12 @@ class _SignUpState extends State<SignUp> {
                           password,
                           passwordConf,
                         );
-                        //OwnerController().registerOwner("Softsian",name, lastName, phone, email, streetAddress,password, passwordConf, sampleImage, context);
                       },
-                      text: 'Sign Up',
+                      text: 'Registrarse',
                     ),
                     CustomRichText(
-                      discription: 'Already Have an account? ',
-                      text: 'Log In here',
+                      discription: '¿Ya tienes una cuenta? ',
+                      text: 'Inicia sesión aquí',
                       onTap: () {
                         Navigator.pushReplacement(
                           context,
