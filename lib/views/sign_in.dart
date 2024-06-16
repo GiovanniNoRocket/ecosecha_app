@@ -8,6 +8,7 @@ import 'package:ecosecha_app/styles/app_colors.dart';
 import 'package:ecosecha_app/views/forget_password_screen.dart';
 import 'package:ecosecha_app/views/onboard.dart';
 import 'package:ecosecha_app/views/sign_up.dart';
+import 'package:ecosecha_app/views/sign_up_owner.dart';
 import 'package:flutter/material.dart';
 
 class Signin extends StatefulWidget {
@@ -157,7 +158,7 @@ class _SigninState extends State<Signin> {
                     ),
                     CustomRichText(
                       discription: "¿No tienes una cuenta? ",
-                      text: "Regístrate",
+                      text: "Regístro de Usuario",
                       onTap: () {
                         Navigator.pushReplacement(
                             context,
@@ -165,6 +166,16 @@ class _SigninState extends State<Signin> {
                                 builder: (context) => const SignUp()));
                       },
                     ),
+                    CustomRichText(
+                      discription: "",
+                      text: "Regístro de Campesino",
+                      onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignUpOwner()));
+                      },
+                    )
                   ],
                 ),
               ),
