@@ -62,7 +62,7 @@ class _HomeScreenOwnerState extends State<HomeScreenOwner> {
       elevation: 0,
       backgroundColor: Colors.transparent,
       title: const Text(
-        "What would you like to add menu?",
+        "¿Qué te gustaría agregar?",
         style: TextStyle(
           color: Color(0xFF3a3737),
           fontSize: 16,
@@ -99,7 +99,7 @@ class _HomeScreenOwnerState extends State<HomeScreenOwner> {
           const Padding(
             padding: EdgeInsets.only(left: 15, right: 15),
             child: Text(
-              "Products",
+              "Productos",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
