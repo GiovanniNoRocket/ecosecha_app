@@ -1,8 +1,8 @@
 import 'package:ecosecha_app/model/people.dart';
 
-class Owner extends People {
+class Campesino extends People {
   final String company;
-  Owner(String name, String lastName, String phone, String streetAddress,
+  Campesino(String name, String lastName, String phone, String streetAddress,
       String email, String profileImage, String id, this.company)
       : super(
             name: name,
@@ -13,7 +13,7 @@ class Owner extends People {
             profileImage: profileImage,
             id: id);
 
-  Owner.defaultConstructor()
+  Campesino.defaultConstructor()
       : company = 'none',
         super(
           name: 'none',
@@ -33,9 +33,9 @@ class Owner extends People {
     return map;
   }
 
-  // Convert JSON to Owner object
-  factory Owner.fromJson(Map<String, dynamic> json) {
-    return Owner(
+  // Convert JSON to Campesino object
+  factory Campesino.fromJson(Map<String, dynamic> json) {
+    return Campesino(
       json['name'],
       json['lastName'],
       json['phone'],

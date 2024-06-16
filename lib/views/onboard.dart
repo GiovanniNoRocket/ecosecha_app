@@ -37,7 +37,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          "Food Express",
+          "Ecosecha",
           style: KTextStyle.headerTextStyle,
         ),
         backgroundColor: AppColors.blue,

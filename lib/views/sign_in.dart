@@ -38,7 +38,11 @@ class _SigninState extends State<Signin> {
             color: AppColors.blue,
           ),
           CustomHeader(
+<<<<<<< HEAD
             text: 'Inicio de sesión.',
+=======
+            text: 'Iniciar Sesión',
+>>>>>>> 484bec2986c3027f8cdfdbab48518a39e4893555
             onTap: () {
               Navigator.pushReplacement(
                   context,
@@ -70,16 +74,13 @@ class _SigninState extends State<Signin> {
                           backgroundColor: Colors.white,
                           child: CircleAvatar(
                             radius: 100,
-                            backgroundColor: Colors
-                                .transparent, // Make the inner circle transparent
+                            backgroundColor: Colors.transparent,
                             child: AspectRatio(
-                              aspectRatio:
-                                  1, // Maintain aspect ratio of the image
+                              aspectRatio: 1,
                               child: ClipOval(
                                 child: Image(
                                   image: AssetImage('assets/ecosecha_logo.png'),
-                                  fit: BoxFit
-                                      .contain, // Fill the available space
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
@@ -89,8 +90,13 @@ class _SigninState extends State<Signin> {
                       height: 20,
                     ),
                     CustomFormField(
+<<<<<<< HEAD
                       headingText: "Correo electrónico",
                       hintText: "exampledelivery@gmail.com",
+=======
+                      headingText: "Correo Electrónico",
+                      hintText: "ejemploentrega@gmail.com",
+>>>>>>> 484bec2986c3027f8cdfdbab48518a39e4893555
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
                       controller: _emailController,
@@ -106,7 +112,11 @@ class _SigninState extends State<Signin> {
                       maxLines: 1,
                       textInputAction: TextInputAction.done,
                       textInputType: TextInputType.text,
+<<<<<<< HEAD
                         hintText: "Al menos 8 caracteres",
+=======
+                      hintText: "Al menos 8 caracteres",
+>>>>>>> 484bec2986c3027f8cdfdbab48518a39e4893555
                       obsecureText: _obscureText,
                       suffixIcon: IconButton(
                           icon: _obscureText
@@ -156,11 +166,19 @@ class _SigninState extends State<Signin> {
                       onTap: () {
                         AuthController().signInUser(context, email, password);
                       },
+<<<<<<< HEAD
                         text: 'Iniciar sesión',
                     ),
                     CustomRichText(
                       discription: "¿No tienes una cuenta? ",
                         text: "Registrarse",
+=======
+                      text: 'Iniciar Sesión',
+                    ),
+                    CustomRichText(
+                      discription: "¿No tienes una cuenta? ",
+                      text: "Regístrate",
+>>>>>>> 484bec2986c3027f8cdfdbab48518a39e4893555
                       onTap: () {
                         Navigator.pushReplacement(
                             context,

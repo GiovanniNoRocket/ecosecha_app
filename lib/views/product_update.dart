@@ -10,7 +10,6 @@ import 'package:ecosecha_app/model/product.dart';
 import 'package:ecosecha_app/views/home_owner.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-//import 'package:image_picker/image_picker.dart';
 import 'package:raised_buttons/raised_buttons.dart';
 
 
@@ -50,7 +49,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Update Product"),
+        title: const Text("Actualizar producto"),
         centerTitle: true,
         leading: IconButton(
           icon: const Icon(
@@ -79,25 +78,9 @@ class _ProductUpdateState extends State<ProductUpdate> {
       }
     } catch (e) {
       showPersonalizedAlert(
-          context, "Unexpected error", AlertMessageType.error);
+          context, "Error inesperado", AlertMessageType.error);
     }
   }
-
-  /*Future<void> getImages() async {
-    try {
-      final List<XFile> pickedImages = await ImagePicker().pickMultiImage();
-
-      if (pickedImages.isNotEmpty) {
-        setState(() {
-          images.addAll(pickedImages);
-        });
-      }
-    } catch (e) {
-      // Manejar errores aquí
-      showPersonalizedAlert(
-          context, "Unexpected error", AlertMessageType.error);
-    }
-  }*/
 
   Widget enableUpload() {
     return SingleChildScrollView(
@@ -106,8 +89,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
         child: Column(
           children: <Widget>[
             CustomFormField(
-                headingText: "Product",
-                hintText: "Example: soup chicken",
+                headingText: "Producto",
+                hintText: "Ejemplo: sopa de pollo",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.food_bank_rounded),
                 textInputType: TextInputType.name,
@@ -116,8 +99,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Quantity",
-                hintText: "Example: 12",
+                headingText: "Cantidad",
+                hintText: "Ejemplo: 12",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.unfold_more_double_sharp),
                 textInputType: TextInputType.number,
@@ -126,8 +109,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Price",
-                hintText: "Example: 12000",
+                headingText: "Precio",
+                hintText: "Ejemplo: 12000",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.monetization_on_outlined),
                 textInputType: TextInputType.number,
@@ -136,8 +119,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Category",
-                hintText: "Example: Fast food",
+                headingText: "Categoría",
+                hintText: "Ejemplo: Comida rápida",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.category_rounded),
                 textInputType: TextInputType.text,
@@ -146,8 +129,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Preparation time",
-                hintText: "Example: 30 minuts",
+                headingText: "Tiempo de preparación",
+                hintText: "Ejemplo: 30 minutos",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.timelapse_outlined),
                 textInputType: TextInputType.text,
@@ -156,8 +139,8 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Description",
-                hintText: "Example: Prepare with meal and salad the apples",
+                headingText: "Descripción",
+                hintText: "Ejemplo: Preparada con carne y ensalada de manzanas",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.description),
                 textInputType: TextInputType.text,
@@ -165,20 +148,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
                 controller: descriptionController,
                 maxLines: 10),
             const SizedBox(height: 16.0),
-            const Text("Update image your product"),
-            /*Wrap(
-              children: [
-                ...images.map((e) => Padding(
-                      padding: const EdgeInsets.all(5),
-                      child: Image.file(
-                        File(e.path),
-                        height: 90,
-                        width: 100,
-                      ),
-                    ))
-              ],
-            ),*/
-
+            const Text("Actualizar imagen del producto"),
             if (sampleImage.path.isNotEmpty)
               Image.file(
                 File(sampleImage.path),
@@ -231,7 +201,7 @@ class _ProductUpdateState extends State<ProductUpdate> {
           userId: widget.product.userId);
       ProductController().updateProduct(product, sampleImage, context);
     } else {
-      showPersonalizedAlert(context, "Expected error", AlertMessageType.error);
+      showPersonalizedAlert(context, "Error inesperado", AlertMessageType.error);
     }
   }
 }
