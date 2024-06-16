@@ -41,7 +41,7 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
               const SizedBox(
                   width: 330,
                   child: Text(
-                    "What's Your Last Name?",
+                    "¿Cuáles son tus apellido?",
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
@@ -60,14 +60,14 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
                             // Handles Form Validation for First Name
                             validator: (value) {
                               if (value == null || value.isEmpty) {
-                                return 'Please enter your first last name';
+                                return 'Por favor ingresa tu primer apellido';
                               } else if (!isAlpha(value)) {
-                                return 'Only Letters Please';
+                                return 'Solo letras, por favor';
                               }
                               return null;
                             },
                             decoration: const InputDecoration(
-                                labelText: 'First Last Name'),
+                                labelText: 'Primer apellido'),
                             controller: firstLastNameController,
                           ))),
                   Padding(
@@ -79,14 +79,14 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
                             // Handles Form Validation for Last Name
                             validator: (value) {
                               if (value == null || value.isEmpty) {
-                                return 'Please enter your last name';
+                                return 'Por favor ingresa tu apellido';
                               } else if (!isAlpha(value)) {
-                                return 'Only Letters Please';
+                                return 'Solo letras, por favor';
                               }
                               return null;
                             },
                             decoration:
-                                const InputDecoration(labelText: 'Last Name'),
+                                const InputDecoration(labelText: 'Segundo apellido'),
                             controller: secondLastNameController,
                           )))
                 ],
@@ -121,7 +121,7 @@ class EditLastNameFormPageState extends State<EditLastNameFormPage> {
                             }
                           },
                           child: const Text(
-                            'Update',
+                            'Guardar',
                             style: TextStyle(fontSize: 15),
                           ),
                         ),

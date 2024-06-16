@@ -97,7 +97,7 @@ class VerifyEmailState extends State<VerifyEmail> {
       await AuthController().sendEmailVerificationLink();
     } catch (e) {
       showPersonalizedAlert(
-          context, "Error sending verification email", AlertMessageType.error);
+          context, "Error al enviar el correo electrónico de verificación", AlertMessageType.error);
     }
 
     setState(() {
@@ -124,15 +124,15 @@ class VerifyEmailState extends State<VerifyEmail> {
               ),
               const SizedBox(height: 8.0),
               const Text(
-                'Email Verification',
+                'Verificación del correo electrónico',
                 style: TextStyle(
                     color: AppColors.firebaseNavy,
-                    fontSize: 26,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8.0),
               Text(
-                "We already sent a verification link to ${_user.email}, please check your inbox.",
+                "Hemos enviado un enlace de verificación al correo ${_user.email}, por favor, consulte su bandeja de entrada.",
                 style: const TextStyle(
                   color: AppColors.darker,
                   fontSize: 17,
@@ -142,8 +142,8 @@ class VerifyEmailState extends State<VerifyEmail> {
               const SizedBox(height: 24.0),
               Text(
                 _isEmailVerified
-                    ? 'Email is verified'
-                    : 'Email is not verified',
+                    ? 'Correo electrónico verificado'
+                    : 'Correo electrónico no verificado',
                 style: TextStyle(
                   color:
                       _isEmailVerified ? Colors.greenAccent : Colors.redAccent,
@@ -165,7 +165,7 @@ class VerifyEmailState extends State<VerifyEmail> {
                       _resendTimer.cancel();
                       AuthController().signOut(context);
                     },
-                    text: "Sign Out"),
+                    text: "Cerrar sesión"),
               _buildResendEmailVerification(),
             ],
           ),
@@ -179,7 +179,7 @@ class VerifyEmailState extends State<VerifyEmail> {
         ? Column(
             children: [
               Text(
-                "Try again in $_start seconds",
+                "Vuelva a intentarlo en $_start segundos",
                 style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -188,8 +188,8 @@ class VerifyEmailState extends State<VerifyEmail> {
             ],
           )
         : CustomRichText(
-            discription: "Didn't receive the verification link? ",
-            text: "Resend",
+            discription: "No ha recibido el link de verificación? ",
+            text: "Reenviar",
             onTap: () {
               _sendVerificationEmail();
             },

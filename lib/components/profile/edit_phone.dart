@@ -39,9 +39,9 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
                 const SizedBox(
                     width: 320,
                     child: Text(
-                      "What's Your Phone Number?",
+                      "¿Cuál es su número de teléfono?",
                       style:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     )),
                 Padding(
                     padding: const EdgeInsets.only(top: 40),
@@ -52,17 +52,17 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
                           // Handles Form Validation
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter your phone number';
+                              return 'Por favor, introduzca su número de teléfono';
                             } else if (isAlpha(value)) {
-                              return 'Only Numbers Please';
+                              return 'Solo números por favor';
                             } else if (value.length < 10) {
-                              return 'Please enter a VALID phone number';
+                              return 'Por favor, ingrese un número de teléfono valido';
                             }
                             return null;
                           },
                           controller: phoneController,
                           decoration: const InputDecoration(
-                            labelText: 'Your Phone Number',
+                            labelText: 'Su número de teléfono',
                           ),
                         ))),
                 Padding(
@@ -92,7 +92,7 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
                               }
                             },
                             child: const Text(
-                              'Update',
+                              'Guardar',
                               style: TextStyle(fontSize: 15),
                             ),
                           ),
