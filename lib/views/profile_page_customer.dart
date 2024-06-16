@@ -35,7 +35,7 @@ class _ProfilePageCustomerState extends State<ProfilePageCustomer> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Edit Profile',
+          'Editar perfil',
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w700,
@@ -94,14 +94,14 @@ class _ProfilePageCustomerState extends State<ProfilePageCustomer> {
                         ),
                       ),
                       buildUserInfoDisplay(
-                          userInfoList[0], 'Name', const EditNameFormPage()),
-                      buildUserInfoDisplay(userInfoList[1], 'Last Name',
+                          userInfoList[0], 'Nombre', const EditNameFormPage()),
+                      buildUserInfoDisplay(userInfoList[1], 'Apellidos',
                           const EditLastNameFormPage()),
                       buildUserInfoDisplay(
-                          userInfoList[2], 'Phone', const EditPhoneFormPage()),
+                          userInfoList[2], 'Teléfono', const EditPhoneFormPage()),
                       buildUserInfoDisplay(
-                          userInfoList[3], 'Email', const EditEmailFormPage()),
-                      buildUserInfoDisplay(userInfoList[4], 'Address',
+                          userInfoList[3], 'Correo electrónico', const EditEmailFormPage()),
+                      buildUserInfoDisplay(userInfoList[4], 'Dirección',
                           const EditAddressFormPage()),
                     ],
                   );

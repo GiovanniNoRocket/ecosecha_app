@@ -97,6 +97,9 @@ flutter:
     - assets/onBoard/OIG4.jpeg
     - assets/onBoard/OIG5.jpeg
     - assets/Home.jpeg
+    - assets/email.png
+    - assets/otp.png
+    - assets/ic_credit_card.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

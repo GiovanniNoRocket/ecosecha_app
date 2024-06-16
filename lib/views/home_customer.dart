@@ -29,7 +29,7 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: const Text(
-          "What would you like to eat?",
+          "¿Qué le gustaría comprar?",
           style: TextStyle(
               color: Color(0xFF3a3737),
               fontSize: 16,
@@ -79,11 +79,11 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Popular foods",
+                  "Alimentos populares",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "See all",
+                  "Ver todos",
                   style: TextStyle(fontSize: 14, color: AppColors.darker),
                 ),
               ],
@@ -99,7 +99,7 @@ class _HomeScreenCustomerState extends State<HomeScreenCustomer> {
           const Padding(
             padding: EdgeInsets.only(left: 15, right: 15),
             child: Text(
-              "Featured",
+              "Destacados",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
