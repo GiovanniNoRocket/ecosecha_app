@@ -38,7 +38,7 @@ class _SigninState extends State<Signin> {
             color: AppColors.blue,
           ),
           CustomHeader(
-            text: 'Log In.',
+            text: 'Inicio de sesión.',
             onTap: () {
               Navigator.pushReplacement(
                   context,
@@ -89,7 +89,7 @@ class _SigninState extends State<Signin> {
                       height: 20,
                     ),
                     CustomFormField(
-                      headingText: "Email",
+                      headingText: "Correo electrónico",
                       hintText: "exampledelivery@gmail.com",
                       obsecureText: false,
                       suffixIcon: const SizedBox(),
@@ -102,11 +102,11 @@ class _SigninState extends State<Signin> {
                       height: 16,
                     ),
                     CustomFormField(
-                      headingText: "Password",
+                      headingText: "Contraseña",
                       maxLines: 1,
                       textInputAction: TextInputAction.done,
                       textInputType: TextInputType.text,
-                      hintText: "At least 15 Character",
+                        hintText: "Al menos 8 caracteres",
                       obsecureText: _obscureText,
                       suffixIcon: IconButton(
                           icon: _obscureText
@@ -123,7 +123,7 @@ class _SigninState extends State<Signin> {
                         setState(() {
                           _errorTextPassword = (AuxController()
                                   .isPasswordLengthValid(value))
-                              ? 'Password must be at least 15 characters long'
+                              ? 'La contraseña debe tener al menos 8 caracteres'
                               : null;
                         });
                       },
@@ -143,7 +143,7 @@ class _SigninState extends State<Signin> {
                                           const ForgetScreen()));
                             },
                             child: Text(
-                              "Forgot Password?",
+                              "¿Olvidaste tu contraseña?",
                               style: TextStyle(
                                   color: AppColors.blue.withOpacity(0.7),
                                   fontWeight: FontWeight.w500),
@@ -156,11 +156,11 @@ class _SigninState extends State<Signin> {
                       onTap: () {
                         AuthController().signInUser(context, email, password);
                       },
-                      text: 'Sign In',
+                        text: 'Iniciar sesión',
                     ),
                     CustomRichText(
-                      discription: "Don't already Have an account? ",
-                      text: "Sign Up",
+                      discription: "¿No tienes una cuenta? ",
+                        text: "Registrarse",
                       onTap: () {
                         Navigator.pushReplacement(
                             context,
