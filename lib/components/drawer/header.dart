@@ -17,13 +17,22 @@ class CustomDrawerHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const FlutterLogo(size: 30),
+          CircleAvatar(
+            child: ClipOval(
+              child: Image.asset(
+                "assets/ecosecha_logo.png",
+                width: 90,
+                height: 90,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           if (isColapsed) const SizedBox(width: 10),
           if (isColapsed)
             const Expanded(
               flex: 3,
               child: Text(
-                'FlyCompany',
+                'Ecosecha',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,

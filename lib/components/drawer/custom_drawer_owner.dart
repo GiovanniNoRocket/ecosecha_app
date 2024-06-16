@@ -45,7 +45,7 @@ class _CustomDrawerOwnerState extends State<CustomDrawerOwner> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.home_outlined,
-                title: 'Home',
+                title: 'Inicio',
                 infoCount: 0,
                 onTap: () {
                   Navigator.push(
@@ -57,19 +57,19 @@ class _CustomDrawerOwnerState extends State<CustomDrawerOwner> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.shopping_cart_rounded,
-                title: 'Orders',
+                title: 'Órdenes',
                 infoCount: 0,
                 onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => OrderView()));
+                          builder: (context) => const OrderView()));
                 },
               ),
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.pin_drop,
-                title: 'Destinations',
+                title: 'Destinos',
                 infoCount: 0,
                 doHaveMoreOptions: Icons.arrow_forward_ios,
                 onTap: () {},
@@ -77,16 +77,8 @@ class _CustomDrawerOwnerState extends State<CustomDrawerOwner> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.message_rounded,
-                title: 'Messages',
+                title: 'Mensajes',
                 infoCount: 8,
-                onTap: () {},
-              ),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: Icons.cloud,
-                title: 'Weather',
-                infoCount: 0,
-                doHaveMoreOptions: Icons.arrow_forward_ios,
                 onTap: () {},
               ),
               CustomListTile(
@@ -107,7 +99,7 @@ class _CustomDrawerOwnerState extends State<CustomDrawerOwner> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.notifications,
-                title: 'Notifications',
+                title: 'Notificaciones',
                 infoCount: 0,
                 onTap: () {Navigator.push(
                       context,
@@ -117,7 +109,7 @@ class _CustomDrawerOwnerState extends State<CustomDrawerOwner> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.settings,
-                title: 'Settings',
+                title: 'Configuración',
                 infoCount: 0,
                 onTap: () {},
               ),
