@@ -18,7 +18,6 @@ class HistorialView extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        // Add any other app bar customization as needed
       ),
       body: FutureBuilder<List<DetailPayment>>(
         future: DetailPaymentController().getDetailPaymentDelivered(uid),
@@ -42,8 +41,7 @@ class HistorialView extends StatelessWidget {
             if (detail != null && detail.isNotEmpty) {
               return SingleChildScrollView(
                 child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: ListView.separated(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),

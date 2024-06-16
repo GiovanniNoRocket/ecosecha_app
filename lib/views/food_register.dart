@@ -19,7 +19,6 @@ class FoodRegister extends StatefulWidget {
 
 class _FoodRegisterState extends State<FoodRegister> {
   late XFile sampleImage = XFile('');
-  //late final List<XFile> images = [];
   final formKey = GlobalKey<FormState>();
   final TextEditingController productController = TextEditingController();
   final TextEditingController quantityController = TextEditingController();
@@ -34,18 +33,8 @@ class _FoodRegisterState extends State<FoodRegister> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Register Product"),
+        title: const Text("Registro de alimento"),
         centerTitle: true,
-        /*leading: IconButton(
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: Color(0xFF3a3737),
-          ),
-          onPressed: () {
-            Navigator.pushReplacement(
-                context, ScaleRoute(page: const HomeScreenOwner()));
-          },
-        ),*/
       ),
       body: enableUpload(),
       bottomNavigationBar: const NavBarOwner(),
@@ -64,25 +53,9 @@ class _FoodRegisterState extends State<FoodRegister> {
       }
     } catch (e) {
       showPersonalizedAlert(
-          context, "Unexpected error", AlertMessageType.error);
+          context, "Error inesperado", AlertMessageType.error);
     }
   }
-
-  /*Future<void> getImages() async {
-    try {
-      final List<XFile> pickedImages = await ImagePicker().pickMultiImage();
-
-      if (pickedImages.isNotEmpty) {
-        setState(() {
-          images.addAll(pickedImages);
-        });
-      }
-    } catch (e) {
-      // Manejar errores aquí
-      showPersonalizedAlert(
-          context, "Unexpected error", AlertMessageType.error);
-    }
-  }*/
 
   Widget enableUpload() {
     return SingleChildScrollView(
@@ -91,8 +64,8 @@ class _FoodRegisterState extends State<FoodRegister> {
         child: Column(
           children: <Widget>[
             CustomFormField(
-                headingText: "Product",
-                hintText: "Example: soup chicken",
+                headingText: "Alimento",
+                hintText: "Ejemplo: Mango",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.food_bank_rounded),
                 textInputType: TextInputType.name,
@@ -101,8 +74,8 @@ class _FoodRegisterState extends State<FoodRegister> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Quantity",
-                hintText: "Example: 12",
+                headingText: "Cantidad",
+                hintText: "Ejemplo: 12",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.unfold_more_double_sharp),
                 textInputType: TextInputType.number,
@@ -111,8 +84,8 @@ class _FoodRegisterState extends State<FoodRegister> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Price",
-                hintText: "Example: 12000",
+                headingText: "Precio",
+                hintText: "Ejemplo: 12000",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.monetization_on_outlined),
                 textInputType: TextInputType.number,
@@ -121,8 +94,8 @@ class _FoodRegisterState extends State<FoodRegister> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Category",
-                hintText: "Example: Fast food",
+                headingText: "Categoría",
+                hintText: "Ejemplo: Frutas",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.category_rounded),
                 textInputType: TextInputType.text,
@@ -131,8 +104,8 @@ class _FoodRegisterState extends State<FoodRegister> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Preparation time",
-                hintText: "Example: 30 minuts",
+                headingText: "Tiempo de preparación",
+                hintText: "Ejemplo: 30 minutos",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.timelapse_outlined),
                 textInputType: TextInputType.text,
@@ -141,8 +114,8 @@ class _FoodRegisterState extends State<FoodRegister> {
                 maxLines: 1),
             const SizedBox(height: 16.0),
             CustomFormField(
-                headingText: "Description",
-                hintText: "Example: Prepare with meal and salad the apples",
+                headingText: "Descripción",
+                hintText: "Ejemplo: Mango fresco de la región",
                 obsecureText: false,
                 suffixIcon: const Icon(Icons.description),
                 textInputType: TextInputType.text,
@@ -150,20 +123,7 @@ class _FoodRegisterState extends State<FoodRegister> {
                 controller: descriptionController,
                 maxLines: 10),
             const SizedBox(height: 16.0),
-            const Text("Add image your product"),
-            /*Wrap(
-              children: [
-                ...images.map((e) => Padding(
-                      padding: const EdgeInsets.all(5),
-                      child: Image.file(
-                        File(e.path),
-                        height: 90,
-                        width: 100,
-                      ),
-                    ))
-              ],
-            ),*/
-
+            const Text("Agrega una imagen del alimento"),
             if (sampleImage.path.isNotEmpty)
               Image.file(
                 File(sampleImage.path),
@@ -216,7 +176,8 @@ class _FoodRegisterState extends State<FoodRegister> {
           descriptionController.text,
           sampleImage);
     } else {
-      showPersonalizedAlert(context, "Expected error", AlertMessageType.error);
+      showPersonalizedAlert(
+          context, "Error inesperado", AlertMessageType.error);
     }
   }
 }
