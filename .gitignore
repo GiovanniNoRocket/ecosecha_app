@@ -30,8 +30,8 @@ lib/firebase_options.dart
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
 pubspec.lock
+/build/
 
 # Symbolication related
 app.*.symbols
