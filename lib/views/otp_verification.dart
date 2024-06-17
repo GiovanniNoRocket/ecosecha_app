@@ -85,14 +85,14 @@ class _OtpVerificationState extends State<OtpVerification> {
                 height: 80,
               ),
               const Text(
-                "OTP Verification",
+                "Verificación de OTP",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 height: 30,
               ),
               const Text(
-                "Enter the OTP code sent to +93 9302992929",
+                "Ingrese el código OTP enviado al +93 9302992929",
                 style: TextStyle(fontSize: 16, color: Colors.black),
                 textAlign: TextAlign.center,
                 maxLines: 2,
@@ -118,7 +118,7 @@ class _OtpVerificationState extends State<OtpVerification> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Didn't receive the OTP code?",
+                    "¿No recibiste el código OTP?",
                     style: TextStyle(fontSize: 14, color: Colors.grey.shade500),
                   ),
                   TextButton(
@@ -129,8 +129,8 @@ class _OtpVerificationState extends State<OtpVerification> {
                     },
                     child: Text(
                       _isResendAgain
-                          ? "Try again in $_start"
-                          : "Resend",
+                          ? "Inténtalo de nuevo en $_start segundos"
+                          : "Reenviar",
                       style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
@@ -171,7 +171,7 @@ class _OtpVerificationState extends State<OtpVerification> {
                             size: 30,
                           )
                         : const Text(
-                            "Verify OTP",
+                            "Verificar OTP",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20,

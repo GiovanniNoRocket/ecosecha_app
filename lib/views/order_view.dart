@@ -36,7 +36,7 @@ class _OrderViewState extends State<OrderView> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Orders',
+          'Ordenes en proceso',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,

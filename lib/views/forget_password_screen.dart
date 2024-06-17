@@ -11,7 +11,7 @@ class ForgetScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Reset password",
+            "Restablecer contraseña",
           style: KTextStyle.font24Blue700Weight,
         ),
         centerTitle: true,
@@ -39,7 +39,7 @@ class ForgetScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Enter email to reset password",
+                                "Ingresa el correo electrónico para restablecer la contraseña",
                               style: KTextStyle.font14Grey400Weight,
                             ),
                           ],

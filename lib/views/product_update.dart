@@ -22,7 +22,6 @@ class ProductUpdate extends StatefulWidget {
 
 class _ProductUpdateState extends State<ProductUpdate> {
   late XFile sampleImage = XFile('');
-  //late final List<XFile> images = [];
   final formKey = GlobalKey<FormState>();
   final TextEditingController productController = TextEditingController();
   final TextEditingController quantityController = TextEditingController();

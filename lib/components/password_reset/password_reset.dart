@@ -28,12 +28,12 @@ class _PasswordResetState extends State<PasswordReset> {
               if (value == null ||
                   value.isEmpty ||
                   AuxController.validateEmail(value) == false) {
-                return 'Please enter a valid email';
+                return 'Por favor, ingresa un correo electrónico válido';
               }
               return null;
             },
             decoration: InputDecoration(
-              hintText: "Email",
+              hintText: "Correo electrónico",
               hintStyle: KTextStyle.font14Hint500Weight,
               filled: true,
               fillColor: AppColors.lightShadeOfGray,
@@ -63,7 +63,7 @@ class _PasswordResetState extends State<PasswordReset> {
                 AuthController()
                     .sendEmailResetPassword(emailController.text, context);
               },
-              text: "Reset")
+              text: "Restablecer")
         ],
       ),
     );

@@ -57,7 +57,7 @@ class _CustomDrawerCustomerState extends State<CustomDrawerCustomer> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.shopping_cart_rounded,
-                title: 'Ordenes',
+                title: 'Órdenes',
                 infoCount: 0,
                 onTap: () {
                   Navigator.push(context,
@@ -75,16 +75,8 @@ class _CustomDrawerCustomerState extends State<CustomDrawerCustomer> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.message_rounded,
-                title: 'Mesnsages',
+                title: 'Mensajes',
                 infoCount: 8,
-                onTap: () {},
-              ),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: Icons.cloud,
-                title: 'Clima',
-                infoCount: 0,
-                doHaveMoreOptions: Icons.arrow_forward_ios,
                 onTap: () {},
               ),
               CustomListTile(
@@ -115,7 +107,7 @@ class _CustomDrawerCustomerState extends State<CustomDrawerCustomer> {
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: Icons.settings,
-                title: 'Configuraciones',
+                title: 'Configuración',
                 infoCount: 0,
                 onTap: () {},
               ),

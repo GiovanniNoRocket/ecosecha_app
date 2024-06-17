@@ -164,7 +164,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                           ),
                           child: Center(
                             child: Text(
-                              'Add x $selectedQuantity',
+                              'Agregar x $selectedQuantity',
                               style: const TextStyle(
                                   fontSize: 18.0,
                                   color: Colors.white,
@@ -201,10 +201,10 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                     ),
                     tabs: [
                       Tab(
-                        text: 'Food Details',
+                        text: 'Detalles del alimento',
                       ),
                       Tab(
-                        text: 'Food Reviews',
+                        text: 'Reseñas del alimento',
                       ),
                     ],
                   ),
