@@ -93,7 +93,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                                   bottomRight: Radius.circular(20.0))),
                         ),
                         child: const Text(
-                          "Previous",
+                            "Anterior",
                           style: KTextStyle.authButtonTextStyle,
                         ),
                       ),
@@ -113,7 +113,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                                   bottomLeft: Radius.circular(20.0))),
                         ),
                         child: const Text(
-                          "Next",
+                          "Siguiente",
                           style: KTextStyle.authButtonTextStyle,
                         ),
                       )
@@ -125,11 +125,6 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   left: MediaQuery.of(context).size.width * 0.33,
                   child: ElevatedButton(
                     onPressed: () {
-                      /* Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const OtpVerification()));
-                       */
                       AuthController().retrieveSession(context);
                     },
                     style: ElevatedButton.styleFrom(
@@ -138,7 +133,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                           borderRadius: BorderRadius.circular(20.0)),
                     ),
                     child: const Text(
-                      "Get Started",
+                        "Comenzar",
                       style: KTextStyle.authButtonTextStyle,
                     ),
                   ),
