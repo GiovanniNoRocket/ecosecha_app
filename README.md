@@ -6,6 +6,11 @@ Esta app esta desarrollada con fines academicos, por tanto se solicita absteners
 
 Compilada y probada solo en dispositivos android
 
-Tecnologías
+# Tecnologías
 - 📱 Flutter para el desarrollo de la aplicación multiplataforma.
 - ☁️ Firebase como backend (autenticación, base de datos).
+
+
+# Principales contribuidores
+- [Sebastian Burgos](https://github.com/Tian2803)
+- [Giovanni Palencia](https://github.com/GiovanniNoRocket)
