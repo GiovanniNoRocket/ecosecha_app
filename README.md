@@ -1,7 +1,11 @@
-# ecosecha_app 
+# Ecosecha
 
-Aplicacion desarrollada en flutter, tienda virtual para que los campesinos puedan publicar sus cosechas, Creada con fines academicos.
+Ecosecha es una plataforma de comercio electrónico que conecta directamente a campesinos con consumidores urbanos, eliminando intermediarios para promover un comercio justo, sostenible y accesible.
 
-# Requisitos
+Esta app esta desarrollada con fines academicos, por tanto se solicita abstenerse de usarla en produccion sin antes verificarla.
 
-- Para usar esta app es necesario el uso de firebase.
+Compilada y probada solo en dispositivos android
+
+Tecnologías
+- 📱 Flutter para el desarrollo de la aplicación multiplataforma.
+- ☁️ Firebase como backend (autenticación, base de datos).
